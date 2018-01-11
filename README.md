@@ -33,7 +33,7 @@ Now use a text editor to open up the "config.js" file. It should look like this:
  
 ```javascript 
  
--module.exports = { 
+module.exports = { 
  
 consumer_key:         'blah', 
 
