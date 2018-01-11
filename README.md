@@ -35,23 +35,23 @@ Now use a text editor to open up the "config.js" file. It should look like this:
  
 module.exports = { 
  
-consumer_key:         'blah', 
+consumer_key:         'key', 
 
-consumer_secret:      'blah', 
+consumer_secret:      'key', 
 
-access_token:         'blah', 
+access_token:         'ke', 
 
-access_token_secret:  'blah' 
+access_token_secret:  'key' 
  
 } 
  
 ``` 
 
-In between those quotes, instead of `'blah'`, paste the appropriate info from the Details page. This is essentially the login information for the app. 
+In between those quotes, instead of `'key'`, paste the appropriate info from the Details page. This is essentially the login information for the app. 
 
 Now type the following in the command line in your project directory: 
  
-`node bot.js` 
+`node retweetbot.js` 
  
 Hopefully at this point you see a message like "Success! Check your bot, it should have retweeted something." Check the Twitter account for your bot, and it should have retweeted a tweet with the #MeetMaye hashtag. 
 
