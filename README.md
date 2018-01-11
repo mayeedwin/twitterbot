@@ -35,21 +35,15 @@ Now use a text editor to open up the "config.js" file. It should look like this:
  
 -module.exports = { 
  
--  consumer_key:         'blah', 
+consumer_key:         'blah', 
 
+consumer_secret:      'blah', 
 
+access_token:         'blah', 
+
+access_token_secret:  'blah' 
  
--  consumer_secret:      'blah', 
-
-
- 
--  access_token:         'blah', 
-
-
- 
--  access_token_secret:  'blah' 
- 
--} 
+} 
  
 ``` 
 
