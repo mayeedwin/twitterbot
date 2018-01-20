@@ -57,6 +57,8 @@ Hopefully at this point you see a message like "Success! Check your bot, it shou
 
 ## License
 
+| --- | --- |
+
 | MIT License | [View License](https://github.com/mayeedwin/twitterbot/blob/master/LICENSE) |
 
 ## Support or Contribute
