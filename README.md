@@ -1,4 +1,4 @@
-# Tweet Maye Bot
+# Reweet #MeetMaye Bot
 
 This bot retweets the latest tweet using the "#MeetMaye" hashtag. It attempts to retweet once per hour.
 
@@ -54,4 +54,8 @@ Now type the following in the command line in your project directory:
 `node retweetbot.js` 
  
 Hopefully at this point you see a message like "Success! Check your bot, it should have retweeted something." Check the Twitter account for your bot, and it should have retweeted a tweet with the #MeetMaye hashtag. 
+
+## License
+
+MIT License | [View License](https://github.com/mayeedwin/twitterbot/blob/master/LICENSE) |
 
