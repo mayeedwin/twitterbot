@@ -59,3 +59,8 @@ Hopefully at this point you see a message like "Success! Check your bot, it shou
 
 MIT License | [View License](https://github.com/mayeedwin/twitterbot/blob/master/LICENSE) |
 
+## Support us 
+
+Donate a star, like, follow and contribute in any way. Be sure to use it **NOW**. If you use this [Twitter Bot](https://github.com/mayeedwin/twitterbot), kindly hit me up via **mayedwine1@gmail.com** or JUST simply [Tweet Me](https://twitter.com/mayeedwin1).
+
+
