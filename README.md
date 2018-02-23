@@ -1,10 +1,10 @@
-# Reweet #MeetMaye Bot
+## Reweet Bot #MeetMaye 
 
 This bot retweets the latest tweet using the "#MeetMaye" hashtag. It attempts to retweet once per hour.
 
 _Note: you must be comfortable using your computer's command line interface to use this bot. If you've never used it, there are tutorials for [Mac OSX](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) and [Windows](http://www.bleepingcomputer.com/tutorials/windows-command-prompt-introduction/)._ 
  
-## Installation 
+### Installation 
  
 If you don't already have have them, please install [Node.js](http://nodejs.org/). This will install two programs: `node`, which runs JavaScript from the command line, and `npm`, which helps you install software that Node.js can run. 
  
@@ -14,7 +14,7 @@ Make an empty project directory somewhere convenient for you, [download this fil
 
 This installs some code to the `npm_modules` subdirectory, which you don't need to worry about. (It's Twit, the library that lets us talk to Twitter.) 
 
-## Connecting to Twitter 
+### Connecting to Twitter 
 
 At this point you need to register a Twitter account and also get its "app info". 
 
@@ -55,11 +55,11 @@ Now type the following in the command line in your project directory:
  
 Hopefully at this point you see a message like "Success! Check your bot, it should have retweeted something." Check the Twitter account for your bot, and it should have retweeted a tweet with the #MeetMaye hashtag. 
 
-## License
+### License
 
 MIT License | [View License](https://github.com/mayeedwin/twitterbot/blob/master/LICENSE) |
 
-## Support or Contribute
+### Support or Contribute
 
 Donate a star, like, follow and contribute in any way. Be sure to use it **NOW**. If you use this [Twitter Bot](https://github.com/mayeedwin/twitterbot), kindly hit me up via **mayedwine1@gmail.com** or JUST simply [Tweet Me](https://twitter.com/mayeedwin1).
 
