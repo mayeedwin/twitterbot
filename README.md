@@ -5,7 +5,7 @@ It attempts to retweet once per hour. You can always change the # to fit your ne
 
 ### Install twit
 
-The library that lets us talk to Twitter
+Install twit while in the ./bot/ folder. The library that lets us talk to Twitter.
 
 ```bash
 npm i twit
