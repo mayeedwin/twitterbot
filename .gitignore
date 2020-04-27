@@ -19,3 +19,4 @@ config.js
 # information for Eclipse / Flash Builder.
 bot/config.js
 bot/node_modules
+*node_modules
