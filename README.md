@@ -1,6 +1,6 @@
 ## Reweet Bot 
 
-Retweets the latest tweet using the "#MeetMaye" hashtag. 
+Retweets the latest tweet using the **"#MeetMaye"** hashtag. 
 It attempts to retweet once per hour. You can always change the # to fit your needs.
 
 ### Install twit
@@ -32,7 +32,7 @@ In between those quotes, instead of `'key'`, paste the appropriate info from the
 
 ### Run the app
 
-Now type the following in the command line in your project ./bot folder directory: 
+Now type the following in the command line while in the ./bot folder directory
  
 ```bash
 node retweetbot.js
