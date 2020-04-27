@@ -1,10 +1,7 @@
 ## Reweet Bot 
 
-This bot retweets the latest tweet using the "#MeetMaye" hashtag. 
-It attempts to retweet once per hour.
-
-**Note :** you must be comfortable using your computer's 
-command line interface to use this bot.
+Retweets the latest tweet using the "#MeetMaye" hashtag. 
+It attempts to retweet once per hour. You can always change the # to fit your needs.
 
 ### Install twit
 
@@ -16,10 +13,7 @@ npm i twit
  
 ### Connecting to Twitter 
 
-Create a Twitter App on Twitter Developers : [https://apps.twitter.com/app/new ](https://apps.twitter.com/app/new )
-
-
-Next you'll see a screen with a "Details" tab. Setup the App and "Application Type", choose "Read and Write". 
+Create a Twitter App on Twitter Developers : [https://apps.twitter.com/app/new ](https://apps.twitter.com/app/new). Next you'll see a screen with a "Details" tab. Setup the App and "Application Type", choose "Read and Write". 
 
 ### Create an empty config.js file in the ./bot folder
 
@@ -44,10 +38,6 @@ Now type the following in the command line in your project ./bot folder director
 node retweetbot.js
 ``` 
 
-### Celebrate!
+### Celebrate
 
 Expect as success message in your console! 
-
-### License
-
-MIT License | [View License](https://github.com/mayeedwin/twitterbot/blob/master/LICENSE) |
