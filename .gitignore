@@ -18,5 +18,5 @@ config.js
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
 bot/config.js
-bot/node_modules
+bot/node_modules/
 *node_modules
