@@ -3,6 +3,7 @@
          title="Promises/A+ 1.1 compliant" align="right" />
 </a>
 
+
 [![Build Status](https://travis-ci.org/petkaantonov/bluebird.svg?branch=master)](https://travis-ci.org/petkaantonov/bluebird)
 [![coverage-98%](https://img.shields.io/badge/coverage-98%25-brightgreen.svg?style=flat)](http://petkaantonov.github.io/bluebird/coverage/debug/index.html)
 
@@ -15,6 +16,10 @@ Bluebird is a fully featured promise library with focus on innovative features a
 See the [**bluebird website**](http://bluebirdjs.com/docs/getting-started.html) for further documentation, references and instructions. See the [**API reference**](http://bluebirdjs.com/docs/api-reference.html) here.
 
 For bluebird 2.x documentation and files, see the [2.x tree](https://github.com/petkaantonov/bluebird/tree/2.x).
+
+### Note 
+
+Promises in Node.js 10 are significantly faster than before. Bluebird still includes a lot of features like cancellation, iteration methods and warnings that native promises don't. If you are using Bluebird for performance rather than for those - please consider giving native promises a shot and running the benchmarks yourself.
 
 # Questions and issues
 
@@ -30,7 +35,7 @@ Thanks to BrowserStack for providing us with a free account which lets us suppor
 
 The MIT License (MIT)
 
-Copyright (c) 2013-2017 Petka Antonov
+Copyright (c) 2013-2019 Petka Antonov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
