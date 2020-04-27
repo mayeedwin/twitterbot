@@ -1,4 +1,4 @@
-## Reweet Bot #MeetMaye 
+## Reweet Bot 
 
 This bot retweets the latest tweet using the "#MeetMaye" hashtag. It attempts to retweet once per hour.
 
@@ -58,9 +58,4 @@ Hopefully at this point you see a message like "Success! Check your bot, it shou
 ### License
 
 MIT License | [View License](https://github.com/mayeedwin/twitterbot/blob/master/LICENSE) |
-
-### Support or Contribute
-
-Donate a star, like, follow and contribute in any way. Be sure to use it **NOW**. If you use this [Twitter Bot](https://github.com/mayeedwin/twitterbot), kindly hit me up! JUST simply [Tweet Me](https://twitter.com/mayeedwin1).
-
 
