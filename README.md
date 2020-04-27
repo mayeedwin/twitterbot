@@ -11,7 +11,7 @@ command line interface to use this bot.
 The library that lets us talk to Twitter
 
 ```bash
-`npm i twit` 
+npm i twit
 ```
  
 ### Connecting to Twitter 
