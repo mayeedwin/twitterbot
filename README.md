@@ -13,7 +13,9 @@ npm i twit
  
 ### Connecting to Twitter 
 
-Create a Twitter App on Twitter Developers : [https://apps.twitter.com/app/new ](https://apps.twitter.com/app/new). Next you'll see a screen with a "Details" tab. Setup the App and "Application Type", choose "Read and Write". 
+ - Create a Twitter App on Twitter Developers : [https://apps.twitter.com/app/new ](https://apps.twitter.com/app/new). 
+ 
+ - Next you'll see a screen with a "Details" tab. Setup the App and "Application Type", choose "Read and Write". 
 
 ### Create an empty config.js file in the ./bot folder
 
@@ -35,9 +37,9 @@ In between those quotes, instead of `'key'`, paste the appropriate info from the
 Now type the following in the command line while in the ./bot folder directory
  
 ```bash
-node retweetbot.js
+node Bot.js
 ``` 
 
 ### Celebrate
 
-Expect as success message in your console! 
+Expect a success message in your console! 
