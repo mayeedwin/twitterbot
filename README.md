@@ -37,7 +37,7 @@ In between those quotes, instead of `'key'`, paste the appropriate info from the
 Now type the following in the command line while in the ./bot folder directory
  
 ```bash
-node Bot.js
+node bot.js
 ``` 
 
 ### Celebrate
