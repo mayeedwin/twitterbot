@@ -8,8 +8,9 @@ const twit = new Twit(require("./config.js"));
 const mediaArtsSearch = { q: "#MeetMaye", count: 100, result_type: "recent" };
 
 // This function finds the latest tweet with the MeetMaye hashtag and retweets.
-const retweetLatest = () => {
-  twit.get("search/tweets", mediaArtsSearch, (error, data) => {
+const retweetLatest = async() => {
+  try {
+       twit.get("search/tweets", mediaArtsSearch, (error, data) => {
     // If our search request to the server had no errors...
     if (error) {
       // However, if our original search request had an error, we want to print it out here...
@@ -19,16 +20,20 @@ const retweetLatest = () => {
       const retweetId = data.statuses[0].id_str;
       // Tell Twitter we want to retweet it...
       twit.post("statuses/retweet/" + retweetId, {}, (error, response) => {
-        if (response) {
-          console.log("Success! Your bot has retweeted something.");
-        }
+      
         // If there was an error with our Twitter call, we print it out here...
         if (error) {
           console.log(error.message);
+        } else if (response) {
+          console.log("Success! Retweeted!");
         }
       });
     }
   });
+  } catch(error) {
+     // Handle errors...
+    console.log(error)
+  }
 };
 
 // Try to retweet something as soon as we run the program...
