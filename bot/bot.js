@@ -20,18 +20,17 @@ const retweetLatest = async() => {
 	//creating a loop to retweet the entire 50 item list of tweets
 	for (let i = 0; i < data.statuses.length; i++){
       // Grab the ID of the tweet we want to retweetwit...
-      const retweetId = data.statuses[0].id_str;
+      const retweetId = data.statuses[i].id_str;
       // Tell Twitter we want to retweet it...
       twit.post("statuses/retweet/" + retweetId, {}, (error, response) => {
-      
         // If there was an error with our Twitter call, we print it out here...
         if (error) {
           console.log(error.message);
         } else if (response) {
           console.log("Success! Retweeted!");
         }
-	}
       });
+	}
     }
   });
   } catch(error) {
