@@ -10,7 +10,7 @@ const mediaArtsSearch = { q: "from%3Amiddleeasteye%20OR%20from%3Aeyeonpalestine%
 
 //will contain a string for a list I made for Palestine News Sources. I am changing the logic to
 //Pull tweets from a twitter list instead of tweets that match a twitter search.
-const palestineListId = "1746614491717022134"
+const palestineListId ={ list_id:  "1746614491717022134", count: 100, include_rts: false };
 // This function finds the latest tweet that matches the search above and retweets.
 const retweetLatest = async() => {
   try {
