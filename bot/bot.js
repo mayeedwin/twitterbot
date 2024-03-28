@@ -4,14 +4,19 @@ const Twit = require("twit");
 // We need to include our configuration file...
 const twit = new Twit(require("./config.js"));
 
-// This is the URL of a search for the latest tweets on the '#MeetMaye' hashtag...
+// This is the URL of a search for the latest tweets from a group of Palestine News Accounts
 const mediaArtsSearch = { q: "from%3Amiddleeasteye%20OR%20from%3Aeyeonpalestine%20OR%20from%3Atimesofgaza%20OR%20from%3Awolpalestine%20OR%20from%3Aqudsnen%20OR%20from%3Apalyouthmvmt%20OR%20from%3Apalestinercs)%20-filter%3Areplies", count: 50, result_type: "recent" };
 //Changed to get the 50 most recent tweets instead of 100
 
+//will contain a string for a list I made for Palestine News Sources. I am changing the logic to
+//Pull tweets from a twitter list instead of tweets that match a twitter search.
+const palestineListId = "1746614491717022134"
 // This function finds the latest tweet that matches the search above and retweets.
 const retweetLatest = async() => {
   try {
-       twit.get("search/tweets", mediaArtsSearch, (error, data) => {
+	//The endpoint for tweets sent by members of a list is in lists/statusues
+	twit.get("lists/statuses", palestineListId, (error, data) => {
+      // twit.get("search/tweets", mediaArtsSearch, (error, data) => {
     // If our search request to the server had no errors...
     if (error) {
       // However, if our original search request had an error, we want to print it out here...
