@@ -18,8 +18,13 @@ const retweetLatest = async (): Promise<void> => {
         console.log(error.message);
       } else {
         const tweetData = data as Twit.Twitter.SearchResults;
+        const statuses = tweetData.statuses;
+        if (!Array.isArray(statuses) || statuses.length === 0) {
+          console.log("No tweets found to retweet for query:", mediaArtsSearch.q);
+          return;
+        }
         // Grab the ID of the tweet we want to retweet...
-        const retweetId = tweetData.statuses[0].id_str;
+        const retweetId = statuses[0].id_str;
         // Tell Twitter we want to retweet it...
         twit.post("statuses/retweet/" + retweetId, {}, (error, response) => {
           // If there was an error with our Twitter call, we print it out here...
