@@ -50,7 +50,7 @@ export default {
 
 ## Key Patterns
 
-- **Single responsibility**: `bot.ts` exports one async function `retweetLatest()` and schedules it with `setInterval`.
+- **Single responsibility**: `bot.ts` defines one async function `retweetLatest()` and schedules it with `setInterval`.
 - **Error handling**: each `twit` callback checks the `error` argument and logs via `console.log`; the outer `try/catch` guards the async wrapper.
 - **Search parameters**: `mediaArtsSearch` in `bot.ts` controls the hashtag, result count, and recency – change `q` to target a different hashtag.
 - **Interval**: 30 minutes (`1000 * 60 * 30`); adjust the `setInterval` call in `bot.ts`.
