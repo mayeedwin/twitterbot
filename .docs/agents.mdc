@@ -1,0 +1,65 @@
+# AI Agent Guide – twitterbot
+
+## Project Overview
+A Node.js Twitter bot (TypeScript) that searches for tweets with the `#MeetMaye` hashtag and retweets the latest result every 30 minutes, using the `twit` library.
+
+## Repository Structure
+```
+bot/
+  bot.ts          # Main entry point: search + retweet logic
+  config.ts       # Runtime secrets (git-ignored – copy from config_sample.ts)
+  tsconfig.json   # TypeScript compiler config
+  package.json    # Dependencies & scripts (twit, typescript, ts-node, @types/*)
+config_sample.ts  # Template for config.ts – shows required Twitter API fields
+README.md         # Setup and run instructions
+```
+
+## Developer Workflows
+
+### Install dependencies
+```bash
+cd bot && npm install
+```
+
+### Run (development)
+```bash
+cd bot && npm start          # ts-node bot.ts
+```
+
+### Build (compile to JS)
+```bash
+cd bot && npm run build      # tsc → dist/
+```
+
+### Run compiled output
+```bash
+cd bot && npm run serve      # node dist/bot.js
+```
+
+## Configuration
+Copy `config_sample.ts` to `bot/config.ts` and fill in your Twitter API credentials:
+```ts
+export default {
+  consumer_key:        'API key',
+  consumer_secret:     'API secret key',
+  access_token:        'Access token',
+  access_token_secret: 'Access token secret',
+};
+```
+`bot/config.ts` is git-ignored. Never commit real credentials.
+
+## Key Patterns
+
+- **Single responsibility**: `bot.ts` defines one async function `retweetLatest()` and schedules it with `setInterval`.
+- **Error handling**: each `twit` callback checks the `error` argument and logs via `console.log`; the outer `try/catch` guards the async wrapper.
+- **Search parameters**: `mediaArtsSearch` in `bot.ts` controls the hashtag, result count, and recency – change `q` to target a different hashtag.
+- **Interval**: 30 minutes (`1000 * 60 * 30`); adjust the `setInterval` call in `bot.ts`.
+
+## External Dependencies
+| Package | Purpose |
+|---------|---------|
+| `twit` | Twitter REST/Streaming API client |
+| `@types/twit` | TypeScript types for twit |
+| `typescript` | TS compiler |
+| `ts-node` | Run `.ts` files directly |
+| `@types/node` | Node.js built-in types |

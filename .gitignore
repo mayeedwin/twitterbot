@@ -1,3 +1,5 @@
 bot/node_modules/
 bot/config.js
+bot/config.ts
+bot/dist/
 Docs.md
