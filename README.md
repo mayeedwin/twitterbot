@@ -1,7 +1,7 @@
 ## Reweet Bot 
 
 Retweets the latest tweet using the **"#MeetMaye"** hashtag. 
-It attempts to retweet once per hour. You can always change the # to fit your needs.
+It attempts to retweet every 30 minutes. You can always change the # to fit your needs.
 
 ### Install dependencies
 
