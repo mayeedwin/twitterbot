@@ -1,9 +1,12 @@
 {
   "name": "twitterbot",
   "version": "1.7.5",
-  "description": "Twiiter Bot",
-  "main": "./config.js",
+  "description": "Twitter Bot",
+  "main": "dist/bot.js",
   "scripts": {
+    "start": "ts-node bot.ts",
+    "build": "tsc",
+    "serve": "node dist/bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +21,11 @@
   "license": "MIT",
   "dependencies": {
     "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/twit": "^2.2.35",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
